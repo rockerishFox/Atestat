@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ID Official</title>
+    <link rel="stylesheet" href="ctours.css"> <!-- link to css file -->
+    <!-- javascript -->
+    <script>
+    //SCRIPT FOR AUTO-CHANGING IMAGE IN SLDER
+    onload  = start;
+
+    function start(){	
+            var i = 1;
+            function Move(){ 	
+	           i = (i%4)+1; // 4 is the Number of image in slider
+	           document.getElementById('i'+i).checked = true;
+            }
+                setInterval(Move,10000); //change img in 3 sec
+            }
+    
+    // When the user scrolls down 55px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 55 || document.documentElement.scrollTop > 55) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script> 
+  <meta charset="utf-8">
+    <!-- to fit for every device we will use this: -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+<body>
+    
+    
+    
+    
+    
+  
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+    <ul>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/main.html">Home</a></li>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/about/about.html">About</a></li>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/albums/albums.html">Albums</a></li>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/tours/tours.html">Tours</a></li>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/contact/contact.html">Contact</a></li>
+        <li>
+            <form action="http://www.google.com/search" method="get">
+                <input type="text" placeholder="Search..." name="q">
+            </form></li>
+    </ul>
+    </nav>
+    
+    
+    
+    <!-- Button that will lead to top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="arrow.png" height="30px" width="30px"></button>
+     <br>
+    
+    
+    
+    <!-- Carousel -->
+<div class="container-car">
+
+	<input type="radio" id="i1" name="images" checked>
+	<input type="radio" id="i2" name="images" >
+	<input type="radio" id="i3" name="images" >
+	<input type="radio" id="i4" name="images" >
+	
+	<div class="slide_img" id="one">			
+			
+			<img src="img2.jpg">
+			
+				<label class="prev" for="i4"><span></span></label>
+				<label class="next" for="i2"><span></span></label>	
+		
+	</div>
+	
+	<div class="slide_img" id="two">
+		
+			<img src="img0.jpg" >
+			
+				<label class="prev" for="i1"><span></span></label>
+				<label class="next" for="i3"><span></span></label>
+		
+	</div>
+			
+	<div class="slide_img" id="three">
+			<img src="img1.jpg">	
+			
+				<label class="prev" for="i2"><span></span></label>
+				<label class="next" for="i4"><span></span></label>
+	</div>
+
+
+	<div class="slide_img" id="four">
+			<img src="img3.jpeg">	
+			
+				<label class="prev" for="i3"><span></span></label>
+				<label class="next" for="i1"><span></span></label>
+
+	</div>
+
+	<div id="nav_slide">
+		<label for="i1" class="dots" id="dot1"></label>
+		<label for="i2" class="dots" id="dot2"></label>
+		<label for="i3" class="dots" id="dot3"></label>
+		<label for="i4" class="dots" id="dot4"></label>
+	</div>
+		
+</div>
+    
+    <hr class="hrbl">
+    
+    
+        <br><br>
+    
+    
+    
+    <!-- Container about number 1 -->
+<div class="container-one">
+    <br>
+    <div class="container-one-text">
+    <p>
+        After the successful five-year trek on the Night Visions Tour for Imagine Dragons' debut in 2012 Night Visions, the band embarked on a ten-month Smoke + Mirrors Tour for their second album, Smoke + Mirrors, which was released in 2015. Following the release of two singles, "Believer" on February 1 and "Thunder" on April 27, they announced their third studio album, Evolve, on May 9. Within that timespan, they also announced via a press release and Twitter the Evolve Tour in support for the album alongside the single "Whatever It Takes". </p><p>On September 18, 2017 they announced 23 further dates, extending the tour to Europe. On October 11, they announced that K.Flay would be the opening act for their UK and Europe shows. On January 22, the band announced six shows in Australia and New Zealand. Singer-songwriter Grace VanderWaal is set to be the opening act in the tour's 2018 summer leg in North America.
+        </p></div>
+    <div class="upd">
+            <p>Upcoming Dates</p>
+    
+        <table class="upd-table" align="center" cellpadding="45px" cellspacing="0">
+            <tr>
+                <td>MAY 18<td>BOONDALL, AUSTRALIA <td>BRISBANE ENTERTAINMENT CENTRE<td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>MAY 19<td>SYDNEY, AUSTRALIA
+                <td>QUDOS BANK ARENA
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>MAY 21<td>AUCKLAND, NEW ZEALAND
+                <td>SPARK ARENA
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>MAY 23<td>WELLINGTON, NEW ZEALAND
+                <td>TSB BANK ARENA
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>JUN 5<td>HARTFORD, CT, USA
+                <td>XFINITY THEATRE
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>JUN 6<td>MANSFIELD, MA, USA
+                <td>XFINITY CENTER
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>JUN 8<td>BANGOR, ME, USA
+                <td>DARLING'S WATERFRONT PAVILION
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            
+            <tr>
+                <td>JUN 9<td>HOLMDEL, NJ, USA
+                <td>PNC BANK ARTS CENTER
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>JUN 11<td>SYRACUSE, NY, USA
+                <td>LAKEVIEW AMPHITHEATER
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>JUN 13<td>TORONTO, CANADA
+                <td>BUDWEISER STAGE
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>JUN 14<td>TORONTO, CANADA
+                <td>BUDWEISER STAGE
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>JUN 16<td>HERSHEY, PA, USA
+                <td>HERSHEY PARK STADIUM
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            <tr>
+                <td>JUN 17<td>CUYAHOGA FALLS, OH, USA
+                <td>BLOSSOM MUSIC CENTER
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            
+            <tr>
+                <td>JUN 19<td>NEW YORK, NY, USA
+                <td>MADISON SQUARE GARDEN
+                <td><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=IMAGINED18">TICKETS</a></td></tr>
+            
+            
+            
+            
+            
+        
+        </table>
+        </div>
+    </div>
+
+        <br><br>
+        
+    
+   
+    
+
+    
+    
+    
+    <br><br>
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer">
+            <p> Follow us on social media: </p>
+            <ul class="social-media">
+                <li class="fb">
+                    <div class="col">
+                         <a href="https://www.facebook.com/ImagineDragons/"><img class="i" src="fb.png"></a>
+                        </div></li>
+                <li class="tw">
+                    <div class="col">
+                        <a href="https://twitter.com/Imaginedragons?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="i" src="tw.png"></a></div></li>
+                <li class="yt">
+                    <div class="col">
+                        <a href="https://www.youtube.com/user/ImagineDragonsVEVO"><img class="i" src="yt.png"></a></div></li>
+                <li class="link">
+                    <div class="col">
+                        <a href="https://shop.imaginedragonsmusic.com/">
+                        <img class="i" src="link.png"></a></div></li>
+                <li class="ig">
+                    <div class="col">
+                        <a href="https://www.instagram.com/imaginedragons/?hl=en"><img class="i" src="ig.png"></a></div></li>
+            </ul>
+        </div>
+    
+    
+    </footer>
+    
+    
+    </body></html>

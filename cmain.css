@@ -1,0 +1,484 @@
+html,body{
+    width:100%;
+    margin: 0px;
+    padding: 0;
+}
+
+/* using some new fonts */
+@font-face {
+    font-family: bromello;
+    src: url(fonts/bromello.ttf);
+}
+@font-face {
+    font-family: aamoline;
+    src: url(fonts/aamonoline.ttf);
+}
+@font-face {
+    font-family: gogoia;
+    src: url(fonts/GOGOIA-Regular.otf);
+}
+@font-face {
+    font-family: fc;
+    src: url(fonts/foxcat.otf);
+}
+@font-face {
+    font-family: inf;
+    src: url(fonts/Infinity.ttf);
+}
+@font-face {
+    font-family: raitons;
+    src: url(fonts/Raitons.ttf);
+}
+
+
+/* Imagine Dragons title */
+
+.container-id .idimg{
+    image-resolution: snap;
+}
+.container-id p
+{
+    font-family: bromello;
+    letter-spacing: 3px;
+    color: aliceblue;
+    font-size: 45px;
+}
+
+
+/* first container - ID */
+.container-id { 
+    height: 420px;
+    /*background-color: #2b7d7a;  */
+    color: #000000;
+    width: fill;
+    text-align: center;
+    padding: 100px;
+    background-image: url(galaxy.jpg);
+}
+.container-id .form-sub .input-email .form-control{
+    
+    box-sizing: border-box;
+    padding: 12px 20px;
+    border: 4px;
+    margin-right: 0;
+    border-color: gray;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    outline: none;
+    margin-bottom: 0.85px;
+    display: inline;
+}
+
+
+
+
+
+/* the email form - subscribe button */
+
+.container-id .form-sub .input-email .btn-e
+{
+    border: 0;
+    margin-left: 0;
+    background-color: lightgray;
+    padding: 12px 20px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    opacity: 1;
+    outline: none;
+}
+.container-id .form-sub .input-email .btn-e:hover{
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+
+
+
+
+/* the hr line */
+.hrbl
+{
+    color: black;
+    height: 2.5px;
+    margin: 0;
+    border: 0;
+    
+    background-color: black;
+    width: 100%;
+}
+
+
+
+
+
+
+/* second container - about */
+.container-about { 
+    background-color: lightgray;  
+    color: #000000;
+    padding: 100px;
+    width: fill;
+    display: flex;
+}
+
+.container-about .ca-col{ 
+padding: 10px;
+width: 50%;
+flex: 50%;
+}
+.container-about .id4{
+    height: 435px; 
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+.container-about h1{
+    text-align: left;
+    font-family: raitons;
+    font-stretch: ultra-expanded;
+}
+.container-about p{
+    font-size: 23px;
+    text-align: justify;
+    font-family: inf;
+    
+}
+
+
+
+
+.container-about .btn-about 
+{ /* design of button of about*/
+    padding: 16px;
+    margin-top: 23px;
+    margin-bottom: 0;
+    background-color: #746084;    
+    border:0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.container-about .btn-about a{
+    text-decoration:none;
+    color: black;
+    display: block;
+    font-size: 15px;
+}
+.container-about .btn-about span
+{   /* designing the arrow effect */
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+.container-about .btn-about span:after 
+{
+  content: '\00bb';/* adds arrow icon */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.container-about .btn-about:hover span {
+  padding-right: 25px;
+}
+
+.container-about .btn-about:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    
+    
+    
+
+
+
+/* Navigation bar */
+.navbar ul{
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: black;
+    padding: 0; 
+    overflow: hidden; 
+}
+.navbar ul li{
+    
+    float: left;
+}
+.navbar ul li a{
+    color:white;
+    background-color: black;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar ul li a:hover{
+    background-color: #130F17;
+    transition-duration: 0.5s;
+    color: #F8E9E9;
+}
+.navbar ul li input{
+    /* - the search bar - */
+    color: #746084;
+    font-weight: bold;
+    background-color: white;
+    margin: 12px;
+    padding: 7px;
+    text-align:left;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    width: 100px;
+    transition: width 0.4s ease-in-out;
+
+    }
+.navbar ul li input:focus{
+    width: 200%;
+}
+
+
+
+
+
+/* third container - albums */
+.container-albums
+{
+    background-color: #352F3A;
+    padding: 100px;
+    color: #F7F7F2;
+    border: 0;
+    text-align: left;
+    width:fill;
+    display: flex;
+    
+}
+.container-albums .cal-col{ 
+padding: 10px;
+width: 33%;
+flex: 33%;
+    align-content: center;
+    align-items: center;
+}
+.container-albums h1{
+    font-family: raitons;
+    font-weight: 200;
+}
+.container-albums p{
+    font-size: 23.5px;
+    text-align: justify;
+    font-family:inf;
+    
+    letter-spacing: 1px;
+}
+.container-albums .songs{
+    padding-left: 70px;
+    color: black;
+}
+.container-albums .idnv{
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-top: 110px;
+}
+.container-albums  .idnv-p{
+    font-size: 25px;
+    text-align: center;
+    font-family:inf;
+    padding-left: 70px;
+    align-content: center;
+    align-items: center;
+}
+
+.container-albums .idsm{
+    height: 250px;
+    border-radius: 10px;
+    width: 265px;
+    margin-left: 70px;
+    margin-top: 110px;
+}
+
+
+
+
+
+.container-albums .btn-albums
+{ /* design of button of albums*/
+    padding: 16px;
+    margin-top: 23px;
+    margin-bottom: 0;
+    background-color: lightgray;    
+    border:0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.container-albums .btn-albums a{
+    text-decoration:none;
+    color: black;
+    display: block;
+    font-size: 15px;
+}
+.container-albums .btn-albums span
+{   /* designing the arrow effect */
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+.container-albums .btn-albums span:after 
+{
+  content: '\00bb';/* adds arrow icon */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.container-albums .btn-albums:hover span {
+  padding-right: 25px;
+}
+
+.container-albums .btn-albums:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+/* fourth container - tours */
+.container-tours
+{
+    background-color:darkgray ;
+    padding: 100px;
+    border: 0;
+    text-align: justify;
+    width: fill;
+    color:  black;
+    font-weight: bolder;
+}
+.container-tours h1{
+    font-family: raitons;
+}
+.container-tours p{
+    font-family: inf;
+    font-size: 25px;
+}.container-tours h3{
+    font-family: inf;
+    font-size: 25px;
+    text-align: right;
+}
+.container-tours table{
+    border: 0;
+}
+
+.container-tours .btn-tours
+{ /* design of button of albums*/
+    padding: 16px;
+    margin-top: 23px;
+    margin-bottom: 0;
+    background-color: #352F3A;    
+    border:0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.container-tours .btn-tours a{
+    text-decoration:none;
+    color: black;
+    display: block;
+    font-size: 15px;
+}
+.container-tours .btn-tours span
+{   /* designing the arrow effect */
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+.container-tours .btn-tours span:after 
+{
+  content: '\00bb'; /* adds arrow icon */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.container-tours .btn-tours:hover span {
+  padding-right: 25px;
+}
+
+.container-tours .btn-tours:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+/* Footer organisation */
+.footer
+{
+    background-color: #222;
+    padding: 25px;
+    text-align: left;
+    border-bottom-right-radius: 10px;
+}
+.footer p
+{
+    color: lightgray;
+    font-size: 25px;
+    
+}
+.footer .social-media{
+    list-style-type: none;
+    margin: 0;
+    border:  0;
+    display: flex;
+    padding: 5px;
+}
+
+.footer .social-media li .col{
+    flex:25%;
+}
+.footer .social-media li a{
+    text-decoration: none;
+    color: paleturquoise;
+    opacity: 0.4;
+    padding-right: 87px;
+}
+.footer .social-media li a .i{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* Button that leads to top */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 10px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    transition: 0.75s;
+}

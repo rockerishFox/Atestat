@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ID Official</title>
+    <link rel="stylesheet" href="cabout.css"> <!-- link to css file -->
+    <!-- javascript -->
+    <script>
+    //SCRIPT FOR AUTO-CHANGING IMAGE IN SLDER
+    onload  = start;
+
+    function start(){	
+            var i = 1;
+            function Move(){ 	
+	           i = (i%4)+1; // 4 is the Number of image in slider
+	           document.getElementById('i'+i).checked = true;
+            }
+                setInterval(Move,10000); //change img in 3 sec
+            }
+    
+    // When the user scrolls down 55px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 55 || document.documentElement.scrollTop > 55) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script> 
+  <meta charset="utf-8">
+    <!-- to fit for every device we will use this: -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+<body>
+    
+    
+    
+  <!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/main.html">Home</a></li>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/about/about.html">About</a></li>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/albums/albums.html">Albums</a></li>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/tours/tours.html">Tours</a></li>
+        <li><a href="/Users/Delia/Desktop/INFO/Atestat3/contact/contact.html">Contact</a></li>
+        <li>
+            <form action="http://www.google.com/search" method="get" >
+                <input type="text" placeholder="Search..." name="q"style="z-index: 100">
+            </form></li>
+    </ul>
+    </nav>
+  
+            
+    <!-- Button that will lead to top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="arrow.png" height="30px" width="30px"></button>
+     <br>
+    <!-- Carousel -->
+<div class="container-car">
+
+	<input type="radio" id="i1" name="images" checked>
+	<input type="radio" id="i2" name="images" >
+	<input type="radio" id="i3" name="images" >
+	<input type="radio" id="i4" name="images" >
+	
+	<div class="slide_img" id="one">			
+			
+			<img src="img1.jpg">
+			
+				<label class="prev" for="i4"><span></span></label>
+				<label class="next" for="i2"><span></span></label>	
+		
+	</div>
+	
+	<div class="slide_img" id="two">
+		
+			<img src="img0.jpg" >
+			
+				<label class="prev" for="i1"><span></span></label>
+				<label class="next" for="i3"><span></span></label>
+		
+	</div>
+			
+	<div class="slide_img" id="three">
+			<img src="img2.jpg">	
+			
+				<label class="prev" for="i2"><span></span></label>
+				<label class="next" for="i4"><span></span></label>
+	</div>
+
+
+	<div class="slide_img" id="four">
+			<img src="img3.jpg">	
+			
+				<label class="prev" for="i3"><span></span></label>
+				<label class="next" for="i1"><span></span></label>
+
+	</div>
+
+	<div id="nav_slide">
+		<label for="i1" class="dots" id="dot1"></label>
+		<label for="i2" class="dots" id="dot2"></label>
+		<label for="i3" class="dots" id="dot3"></label>
+		<label for="i4" class="dots" id="dot4"></label>
+	</div>
+		
+</div>
+    
+    <hr class="hrbl">
+    
+    
+        <br><br>
+        <br><br>
+        <br><br>
+
+    <!-- Container about number 1 -->
+<div class="container-one">
+    <br>
+    <div class="container-one-text">
+    <p>
+        After releasing their 2012 full-length debut Night Visions (featuring the Grammy Award-winning single “Radioactive”), Imagine Dragons spent nearly two years bringing their passionately inventive brand of alt-rock to arenas around the world. To deal with the chaos of a touring schedule that included 130 headline dates and 50 festivals across the globe, the Las Vegas-based quartet threw themselves into creating material for their next album. “So many things were changing for us so quickly, the only way to feel some kind of stability was to keep writing,” says frontman Dan Reynolds, who founded Imagine Dragons with guitarist Wayne Sermon, bassist Ben McKee, and drummer Daniel Platzman. “Going up to my hotel room to work on new songs became something I looked forward to every night on tour,” Reynolds adds. “There were definitely a few times when the person next door’s banging on the wall because it’s 4 a.m. and they’re trying to sleep and I’m in there belting out some song I just wrote.”
+    </p>
+    <p>
+        With Smoke + Mirrors, Imagine Dragons use the frenetic energy of life on the road to infuse their music with both raw tension and intense vulnerability. As on Night Visions—which prompted Imagine Dragons to rack up more than 3.9 million album sales and 24 million track sales worldwide—the band works with sharply crafted beats and grooves to dream up rhythm-driven rock music that’s artful yet visceral. Also revealing the band’s dedication to keeping it homespun, Smoke + Mirrors marks the first release recorded in their new self-built home studio. “Working in a rented studio usually ends up with the creative process being somewhat rushed, so this was the best way to make something at our own pace,” explains Reynolds.
+    </p>   
+        <br><br>
+    <p>
+        In each sprawling and hook-laced song on Smoke + Mirrors—including the brooding but anthemic lead single “Bet My Life” and the soulful, tribal-drumbeat-powered title track—Imagine Dragons reveal the pain and exhilaration that comes with soul-searching and transcendence. “One of the goals in making this album was to capture the extremes of the past couple years,” says Reynolds. “There were times on the road where I was on the highest high, like after playing in Brazil in front of 80,000 people, and there were other times when I was really feeling how difficult and lonely it was to be away from my family for so long.” To lay that emotion bare, Imagine Dragons stripped away some studio flourishes and embraced a sense of brilliant imperfection in producing Smoke + Mirrors. “A lot of the vocals on the album were ones that I recorded into my laptop or a cheap USB mike in my hotel room, because those were the takes that really had the spirit of the moment when the song was written,” Reynolds points out. At the same time, Imagine Dragons expanded their sound by using instruments collected in their travels, adding even more texture and depth to the band’s already-intricate rhythms and melodies.
+        </p>
+    <p>
+        Live performance has always been essential to Imagine Dragons, who formed in 2009 and quickly earned a grassroots following by touring extensively and independently releasing a series of EPs. After signing to KIDinaKORNER/Interscope Records, the band made their major-label debut with the release of Continued Silence (a 2012 EP featuring the breakthrough single “It’s Time”). Once Night Visions arrived later that same year, Imagine Dragons soon found themselves on a skyward trajectory that saw the album climbing to #2 on the Billboard 200 chart, as well as the group taking home the Best Rock Performance for “Radioactive” at the 2014 Grammy Awards.
+        </p>
+    <p>
+        Despite the whirlwind of the past few years, the drive to create sonically adventurous but unabashedly honest music has remained a constant for Imagine Dragons. And for Reynolds—who recalls sneaking onto his older brother’s computer at age 13 to use the recording software and sketch out songs about his early-adolescent heartache and frustrations—Smoke + Mirrors has proven his most daringly candid experience in songwriting yet. “At times it’s really scary to think about so many people hearing what I’m talking about in the lyrics on this album, but I know that for better for worse it’s completely authentic and genuine and true to who we are as a band,” says Reynolds. “And that’s the most important thing you can ever do as an artist, and also the most magical: forget about everyone and everything else for the moment, and just create whatever’s most meaningful to you.”
+        </p>
+    </div>
+</div>
+        <br><br>
+        <br><br>
+        <br><br>
+    
+    
+    <!-- DIV WITH BAND MEMBERS AND LINK TO WIKIPEDIA -->
+    
+<div class="bandm">
+    <div class="bandcol">
+        <a href="https://en.wikipedia.org/wiki/Dan_Reynolds_(singer)" style="text-decoration: none">
+        <img src="IDDR.jpg" class="IDDR">
+        <div class="middle">
+                <div class="text">Dan Reynolds</div>
+        </div>
+        </a>
+    </div>
+    <div class="bandcol">
+        <a href="https://en.wikipedia.org/wiki/Daniel_Platzman" style="text-decoration: none">
+        <img src="IDDP.jpg" class="IDDP">
+        <div class="middle">
+                <div class="text">Daniel Platzman</div>
+            </div></a>
+    </div>
+    <div class="bandcol">
+        <a href="https://en.wikipedia.org/wiki/Ben_McKee" style="text-decoration: none">
+        <img src="IDBMK.jpg" class="IDBMK">
+        <div class="middle">
+                <div class="text">Ben McKee</div>
+            </div></a>
+    </div>
+    <div class="bandcol">
+        <a href="https://en.wikipedia.org/wiki/Wayne_Sermon" style="text-decoration: none">
+        <img src="IDWS.jpg" class="IDWS">
+        <div class="middle">
+                <div class="text">Wayne Sermon</div>
+            </div></a>
+    </div>
+    
+    </div>
+    
+    
+
+    
+    
+    
+    <br><br>
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer">
+            <p> Follow us on social media: </p>
+            <ul class="social-media">
+                <li class="fb">
+                    <div class="col">
+                         <a href="https://www.facebook.com/ImagineDragons/"><img class="i" src="fb.png"></a>
+                        </div></li>
+                <li class="tw">
+                    <div class="col">
+                        <a href="https://twitter.com/Imaginedragons?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="i" src="tw.png"></a></div></li>
+                <li class="yt">
+                    <div class="col">
+                        <a href="https://www.youtube.com/user/ImagineDragonsVEVO"><img class="i" src="yt.png"></a></div></li>
+                <li class="link">
+                    <div class="col">
+                        <a href="https://shop.imaginedragonsmusic.com/">
+                        <img class="i" src="link.png"></a></div></li>
+                <li class="ig">
+                    <div class="col">
+                        <a href="https://www.instagram.com/imaginedragons/?hl=en"><img class="i" src="ig.png"></a></div></li>
+            </ul>
+        </div>
+    
+    
+    </footer>
+    
+    
+    </body></html>
